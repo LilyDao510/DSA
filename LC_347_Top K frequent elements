@@ -1,0 +1,22 @@
+#347. Top K Frequent Elements
+
+def topKFrequent(nums,k):
+    dictN={}
+    for num in nums:
+        dictN[num] = 1 + dictN.get(num,0)
+    arr =[]
+    for num, cnt in dictN.items():
+        arr.append([cnt,num])
+    arr.sort()
+
+    res =[]
+    while len(res) <= k:
+        res.append(arr.pop()[1])
+    return res
+# test
+nums = [1,2,2,3,3,3]
+k = 2
+print(topKFrequent(nums,k))
+
+
+
