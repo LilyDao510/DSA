@@ -1,4 +1,4 @@
-#20. Valid Parentheses
+# 20. Valid Parentheses
 # Solution - Stack:
 def isValid(s:str):
     stack =[]
@@ -10,7 +10,7 @@ def isValid(s:str):
             return False
     return len(stack)==0
 
-# # solution _bruce force 
+# solution _bruce force 
 
 def isValid(s:str):
     while "()" in s or "{}" in s or "[]" in s:
@@ -37,6 +37,7 @@ def groupAnagram(strs):
 strs = ["eat","tea","tan","ate","nat","bat"]
 print(groupAnagram(strs))
            
+
             
             
 
