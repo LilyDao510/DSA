@@ -1,4 +1,6 @@
 # 128. Longest Consecutive Sequence
+
+# use set
 def longestConsecutive(nums):
     new_nums = set(nums)
     longest = 0
@@ -15,3 +17,6 @@ def longestConsecutive(nums):
 # ex: 
 nums = [2,20,4,10,3,4,5,6,7]
 print(longestConsecutive(nums))
+
+# Time complexity : O(n)
+# spec complexity: O(n)

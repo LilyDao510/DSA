@@ -10,7 +10,7 @@ def topKFrequent(nums,k):
     arr.sort()
 
     res =[]
-    while len(res) <= k:
+    while len(res) < k:
         res.append(arr.pop()[1])
     return res
 # test
